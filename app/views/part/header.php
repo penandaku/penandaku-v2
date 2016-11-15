@@ -31,12 +31,14 @@
           <?php if($this->session->userdata('users_id')) { ?>
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
-                <a class="dropdown-toggle" style="padding-top: 24px;line-height: 25px;" data-toggle="dropdown" href="#"><?php print $this->session->userdata('nama_user'); ?>
+                <a class="dropdown-toggle" style="padding-top: 10px;line-height: 30px;padding-bottom:9px;" data-toggle="dropdown" href="#"><img src="https://www.gravatar.com/avatar/568a6cd892b6be27a4331830f99b94c1?s=100?s=45&amp;d=mm&amp;r=g" width="45" height="45" alt="" style="border-radius:25px" class="avatar alignnone photo avatar-default"> <?php print $this->session->userdata('nama_user'); ?>
                 <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="<?php print base_url() ?>user/dashboard/"><i class="fa fa-home"></i> Dashboard</a></li>
-                  <li><a href="<?php print base_url() ?>user/setting/"><i class="fa fa-cogs"></i> Setting</a></li>
+                  <li><a href="<?php print base_url() ?>user/dashboard/"><i class="fa fa-folder-open"></i> Your label</a></li>
+                  <li><a href="<?php print base_url() ?>user/dashboard/"><i class="fa fa-bookmark"></i> Your bookmark</a></li>
                   <li class="divider"></li>
+                  <li><a href="<?php print base_url() ?>user/setting/"><i class="fa fa-cogs"></i> Setting</a></li>
                   <li><a href="<?php print base_url() ?>user/dashboard/logout/"><i class="fa fa-sign-out"></i> Logout</a></li>
                 </ul>
               </li>

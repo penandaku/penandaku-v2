@@ -65,5 +65,15 @@
    <div class="penandaku-batas"></div>
   </div>
 
+  <div class="row">
+    <div class="col-md-9" style="font-family:'Roboto';font-weight:300;font-size:19px">
+        <p style="font-size:25px;"> Tentang Kami</p>
+        <p>Penandaku adalah App penyedia layanan penyimpanan bookmark secara online, sehingga anda tidak perlu kawatir menyimpan dan mengakses bookmark anda dimanapun dan kapanpun saja.</p>
+    </div>
+    <div class="col-md-3">
+      <img class="img-responsive" src="<?php print cdn('img/home.svg') ?>" style="width:200px;margin-left:50px">
+    </div>
+  </div>
+
   </div>
   <hr style="margin-top:100px;width:100%">

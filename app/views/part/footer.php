@@ -34,6 +34,8 @@
 </footer>
 <script src="<?php print cdn('js/jquery.min.js') ?>"></script>
 <script src="<?php print cdn('js/bootstrap.min.js') ?>"></script>
+<script src="<?php print cdn('js/vue.js') ?>"></script>
+<script src="<?php print cdn('js/vue-router.js') ?>"></script>
 <script src="<?php print cdn('js/custom.js') ?>"></script>
 <script>
     $('.penandaku-btn-register').on('click', function() {

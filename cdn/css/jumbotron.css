@@ -33,7 +33,7 @@
   font-weight: 700;
 }
 body {
-  padding-top: 50px;
+  padding-top: 40px;
   padding-bottom: 7px;
 }
 
@@ -365,4 +365,34 @@ body {
 .card .card-action a:hover {
   color: #000000;
   text-decoration: none;
+}
+
+.fb-profile img.fb-image-lg{
+    z-index: 0;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 300px;
+}
+
+.fb-image-profile
+{
+    margin: -90px 10px 0px 50px;
+    z-index: 9;
+    width: 15%;
+}
+
+@media (max-width:768px)
+{
+
+.fb-profile-text>h1{
+    font-weight: 700;
+    font-size:16px;
+}
+
+.fb-image-profile
+{
+    margin: -45px 10px 0px 25px;
+    z-index: 9;
+    width: 20%;
+}
 }

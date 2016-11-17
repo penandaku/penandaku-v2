@@ -55,3 +55,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 //ROUTING
 $route['about'] = "pages/about";
+$route['policies'] = "pages/policies";
+$route['terms'] = "pages/terms";
+$route['bug'] = "pages/bug";
+$route['feedback'] = "pages/feedback";

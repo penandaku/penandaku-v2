@@ -1,9 +1,9 @@
 <div class="fb-profile">
-    <img align="left" class="fb-image-lg" src="https://www.socmatic.com/assets/templates/frontend/default/images/background/bg-header-2.jpg" alt="Profile image example"/>
+    <img align="left" class="fb-image-lg" src="https://www.socmatic.com/assets/templates/frontend/default/images/background/bg-footer-1.jpg" alt="Profile image example"/>
     <img align="left" class="fb-image-profile thumbnail" src="<?php echo cdn('img/fika.jpg') ?>" alt="Profile image example"/>
       <div class="fb-profile-text">
-            <h1>Fika Ridaul maulayya</h1>
-            <p><i class="fa fa-clock-o"> Joined 20 - Sep - 2016</i></p>
+            <h1 style="font-family:Roboto;font-weight:300">Fika Ridaul Maulayya</h1>
+            <p style="font-family:Roboto;font-weight:300"><i class="fa fa-clock-o"> Joined 20 - Sep - 2016</i></p>
       </div>
 </div>
 <hr>

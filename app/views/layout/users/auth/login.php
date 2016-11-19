@@ -13,39 +13,39 @@
     <link rel="stylesheet" href="<?php print cdn('css/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?php print cdn('css/jumbotron.css') ?>">
   </head>
-  <body style="background-color:#f9f9f9">
-    <div class="container" style="margin-top:40px">
+  <body style="background-color:#fff">
+    <div class="container" style="margin-top:30px">
       <div class="col-md-4">
       </div>
       <div class="col-md-4">
         <div class="login-logo">
-            <img src="<?php echo cdn('img/home.svg') ?>" style="width:120px;margin-bottom:20px">
+          <img src="<?php echo cdn('img/logo-login.png') ?>" style="width:300px;margin-bottom:10px;padding:0px 0px">
         </div>
         <div class="error-login">
           <?php if(isset($error)) { echo $error; }; ?>
         </div>
-          <div class="panel panel-default" style="font-family:'Roboto'">
-            <div class="panel-body">
+          <div class="card-login" style="font-family:'Roboto'">
+            <div class="panel-body body-login">
+              <div class="thumb-login">
+                <canvas id="canvas" class="circle" width="96" height="96"></canvas>
+              </div>
               <?php
                 $attributes = array('id' => 'frm_login');
                 echo form_open('login/', $attributes)
                 ?>
+
                 <div class="form-group">
-                  <label style="font-weight:normal">Enter Username </label>
-                  <input type="text" name="username" class="form-control" value="<?php echo set_value('username') ?>" placeholder="Enter username">
+                  <input type="text" name="username" class="form-control"  style="height:44px;font-size:16px" value="<?php echo set_value('username') ?>" placeholder="Enter username">
                   <?php echo form_error('username'); ?>
                 </div>
-                <div class="form-group">
-                  <label style="font-weight:normal">Enter Password <a href="<?php print base_url() ?>forgot-password/">(<i class="fa fa-lock"></i> forgot password)</a></label>
-                  <input type="password" name="password" class="form-control" value="<?php echo set_value('password') ?>" placeholder="Enter Password">
-                  <?php echo form_error('password'); ?>
-                </div>
-                <button type="submit" id="load" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Signing in..." class="penandaku-btn-login btn btn-sm btn-success">Sign in</button>
+                <button type="submit" id="load" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Checking..." class="penandaku-btn-login btn btn-sm btn-success">Next</button>
               <?php echo form_close(); ?>
             </div>
         </div>
-        <div class="create-account" style="font-family:'Roboto'">
-          Copyright © 2016 Penandaku, Inc. All Rights Reserved.
+
+        <div class="text-center">
+          <a href="<?php //echo $this->facebook->login_url(); ?>" class="btn-green-primary btn" style="background: #3b5999;color:#fff;"><i class="fa fa-facebook"></i> Facebook</a>
+          <a href="<?php //echo $this->google->login_url(); ?>" class="btn-green-primary btn" style="background: #dc4e41;color:#fff"><i class="fa fa-google-plus"></i> Google +</a>
         </div>
       </div>
       <div class="col-md-4">

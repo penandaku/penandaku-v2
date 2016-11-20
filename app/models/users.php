@@ -17,12 +17,45 @@ class Users extends CI_Model{
   }
 
   /* fungsi login */
-	function login($table,$field1,$field2)
+	function checking_username($table,$field1)
 	{
 		$this->db->select('*');
 		$this->db->from($table);
 		$this->db->where($field1);
-		$this->db->where($field2);
+		$this->db->limit(1);
+		$query = $this->db->get();
+		if ($query->num_rows() == 0) {
+			return FALSE;
+		} else {
+			return $query->result();
+		}
+	}
+	/* end fungsi auth */
+
+  /* fungsi login */
+  function checking_password($table,$field1,$field2)
+  {
+    $this->db->select('*');
+    $this->db->from($table);
+    $this->db->where($field1);
+    $this->db->where($field2);
+    $this->db->limit(1);
+    $query = $this->db->get();
+    if ($query->num_rows() == 0) {
+      return FALSE;
+    } else {
+      return $query->result();
+    }
+  }
+  /* end fungsi auth */
+
+  /* fungsi login */
+	function checking_all($table,$field1,$field2)
+	{
+		$this->db->select('*');
+		$this->db->from($table);
+		$this->db->where($field1);
+    $this->db->where($field2);
 		$this->db->limit(1);
 		$query = $this->db->get();
 		if ($query->num_rows() == 0) {

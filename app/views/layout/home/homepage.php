@@ -1,4 +1,4 @@
-<div class="jumbotron" style="background-image: url('<?php print cdn('img/bg.png') ?>'); position:relative;background-color:#333">
+<div class="jumbotron" style="background-image: url('<?php print cdn('img/bg-header-4.jpg') ?>'); position:relative;background-color:#333">
   <div class="container" style="color:#fff;margin-top:15px">
     <div class="col-md-8">
     <h2 style="font-family: 'Roboto'; font-weight:300;font-size:40px;margin-top:100px"><strong>PENANDA</strong> KU<br> Layanan Penyedia Bookmark Online</h2>

@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $config['cdn'] = ((ENVIRONMENT != 'production')?'//localhost/penandaku-v2/cdn/':'//cdn.penandaku.com/');
 
-$config['cloud'] = ((ENVIRONMENT != 'production')?'//localhost/penandaku-v2/':'//cloud.penandaku.com/');
+$config['cloud'] = ((ENVIRONMENT != 'production')?'//localhost/penandaku-v2/cloud/':'//cloud.penandaku.com/');
 
 /*
 |--------------------------------------------------------------------------

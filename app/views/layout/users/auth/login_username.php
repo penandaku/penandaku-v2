@@ -19,10 +19,7 @@
       </div>
       <div class="col-md-4">
         <div class="login-logo">
-          <img src="<?php echo cdn('img/logo-login.png') ?>" style="width:300px;margin-bottom:10px;padding:0px 0px">
-        </div>
-        <div class="error-login">
-          <?php if(isset($error)) { echo $error; }; ?>
+          <a href="<?php echo base_url() ?>"> <img src="<?php echo cdn('img/logo-login.png') ?>" style="width:300px;margin-bottom:10px;padding:0px 0px"></a>
         </div>
           <div class="card-login" style="font-family:'Roboto'">
             <div class="panel-body body-login">
@@ -31,12 +28,15 @@
               </div>
               <?php
                 $attributes = array('id' => 'frm_login');
-                echo form_open('login/', $attributes)
+                echo form_open('login?source=header&utf8=✓', $attributes)
                 ?>
 
                 <div class="form-group">
                   <input type="text" name="username" class="form-control"  style="height:44px;font-size:16px" value="<?php echo set_value('username') ?>" placeholder="Enter username">
                   <?php echo form_error('username'); ?>
+                  <div class="error-login" style="margin-top:10px;">
+                    <?php if(isset($error)) { echo $error; }; ?>
+                  </div>
                 </div>
                 <button type="submit" id="load" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Checking..." class="penandaku-btn-login btn btn-sm btn-success">Next</button>
               <?php echo form_close(); ?>

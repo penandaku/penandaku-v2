@@ -1,22 +1,12 @@
-<div class="fb-profile">
-<<<<<<< HEAD
-    <img align="left" class="fb-image-lg" src="<?php echo cdn('img/bg-footer-1.jpg') ?>" alt="Profile image example"/>
-    <img align="left" class="fb-image-profile thumbnail" src="<?php echo cdn('img/fika.jpg') ?>" alt="Profile image example"/>
-      <div class="fb-profile-text">
-          <div class="card" style="padding-bottom:20px">
-              <h1 style="font-family:Roboto;font-weight:300">Fika Ridaul Maulayya</h1>
-              <hr>
-              <p style="font-family:Roboto;font-weight:300"><i class="fa fa-clock-o"> Joined 20 - Sep - 2016</i></p>
-          </div>              
-=======
-    <img align="left" class="fb-image-lg" src="<?php print cdn('img/bg.jpg') ?>" alt="Profile image example"/>
-    <img align="left" class="fb-image-profile thumbnail" src="<?php echo cdn('img/fika.jpg') ?>" alt="Profile image example"/>
-      <div class="fb-profile-text">
+<div class="penandaku-profile">
+    <img align="left" class="penandaku-image-lg" src="<?php print cdn('img/bg.jpg') ?>" alt="Profile image example"/>
+    <img align="left" class="penandaku-image-profile thumbnail" src="<?php echo cloud('avatar/wew.jpg') ?>" alt="Profile image example"/>
+      <div class="penandaku-profile-text">
             <h1 style="font-family:Roboto;font-weight:300">Fika Ridaul Maulayya</h1>
             <div class="user-username" style="font-size:20px;font-weight:300"> @maulayyacyber</div>
->>>>>>> chnge style login
       </div>
 </div>
+<hr>
 <div class="container" style="margin-top:40px">
   <div class="row">
     <div class="col-md-3">

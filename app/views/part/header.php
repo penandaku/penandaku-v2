@@ -31,9 +31,9 @@
           <?php if($this->session->userdata('users_id')) { ?>
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
-                <a class="dropdown-toggle" style="padding-top: 11px;line-height: 30px;padding-bottom:9px;" data-toggle="dropdown" href="#"><img src="<?php echo cdn('img/fika.jpg') ?>" width="45" height="45" alt="" style="border-radius:25px" class="avatar alignnone photo avatar-default"> <?php print $this->session->userdata('nama_user'); ?>
+                <a class="dropdown-toggle" style="padding-top: 11px;line-height: 30px;padding-bottom:9px;" data-toggle="dropdown" href="#"><img src="<?php echo cloud('avatar/wew.jpg') ?>" width="45" height="45" alt="" style="border-radius:25px" class="avatar alignnone photo avatar-default"> <?php print $this->session->userdata('nama_user'); ?>
                 <span class="caret"></span></a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" style="min-width:200px;">
                   <div style="color:#333;margin-left:17px">Signed in as</div>
                   <div style="color:#333;margin-left:17px;font-weight: 500;"><?php print $this->session->userdata('username'); ?></div>
                   <li class="divider"></li>
@@ -48,8 +48,8 @@
             </ul>
           <?php }else{ ?>
               <div  class="navbar-form navbar-right" style = 'margin-top:13px;'>
-                <a href="<?php print base_url() ?>login?source=header&utf8=✓" class="btn btn-default" style="padding: 9px 15px;font-family:Roboto;font-weight:normal"><i class="fa fa-sign-in"></i> Sign in</a>
-                <a href="<?php print base_url() ?>join?source=header&utf8=✓" class="btn btn-success" style="padding: 9px 15px;font-family:Roboto;font-weight:normal"><i class="fa fa-user-plus"></i> Sign up</a>
+                <a href="<?php print base_url() ?>login?source=header&penandaku_token=<?php echo $this->security->get_csrf_hash(); ?>&utf8=✓" class="btn btn-default" style="padding: 9px 15px;font-family:Roboto;font-weight:normal"><i class="fa fa-sign-in"></i> Sign in</a>
+                <a href="<?php print base_url() ?>join?source=header&penandaku_token=<?php echo $this->security->get_csrf_hash(); ?>&utf8=✓" class="btn btn-success" style="padding: 9px 15px;font-family:Roboto;font-weight:normal"><i class="fa fa-user-plus"></i> Sign up</a>
               </div>
          <?php } ?>
         </div>

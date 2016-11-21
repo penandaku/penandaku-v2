@@ -53,6 +53,9 @@
                 </div>
                 <button type="submit" id="load" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Signing in..." class="penandaku-btn-login btn btn-sm btn-success">Sign in</button>
               <?php echo form_close(); ?>
+              <div class="forgot" style="margin-top:10px;float:right">
+                <a href="<?php echo base_url() ?>login/forgot?source=header&utf8=✓"> Lupa password ?</a>
+              </div>
             </div>
         </div>
 

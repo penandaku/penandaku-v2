@@ -7,7 +7,7 @@
     <div class="col-md-4">
       <?php
         $attributes = array('id' => 'frm_login');
-        echo form_open(base_url('join/'), $attributes)
+        echo form_open(base_url('join/source_home?&utf8=✓'), $attributes)
         ?>
         <div class="form-group">
           <input type="text" name="username" class="form-control" value="<?php echo set_value('username') ?>" id="username" placeholder="Masukkan Username." style="height:45px;font-size:16px;font-family:'Roboto';font-weight:normal">

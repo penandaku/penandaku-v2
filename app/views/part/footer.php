@@ -80,6 +80,13 @@
               $this.button('reset');
             }, 8000);
     });
+    $('.penandaku-btn-login').on('click', function() {
+        var $this = $(this);
+            $this.button('loading');
+            setTimeout(function() {
+              $this.button('reset');
+            }, 2000);
+    });    
 </script>
 </body>
 </html>

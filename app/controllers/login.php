@@ -154,7 +154,37 @@ class Login extends CI_Controller {
         $this->load->view('layout/users/auth/login_password', $data);
       }
     }else{
-      redirect('login/');
+      redirect('login?source=header&utf8=✓');
+    }
+  }
+
+  public function forgot()
+  {
+    if($this->users->users_id())
+    {
+      redirect('/');
+    }else{
+      //set form validation
+      $this->form_validation->set_rules('email_sddress', 'Alamat Email', 'required|valid_email');
+      //set message form validation
+      $this->form_validation->set_message('required', '<div class="alert alert-danger" style="font-family:Roboto">
+                                                          <i class="fa fa-exclamation-circle"></i> { field } harus diisi.
+                                                        </div>');
+      if($this->form_validation->run() == TRUE)
+      {
+        //get form data
+        $email = $this->input->post('email');
+
+      }else{
+        //create data array
+        $data = array(
+                'title'         => 'Forgot Password - penandaku.com',
+                'descriptions'  => '',
+                'keywords'      => '',
+                'error'         => ''
+        );
+        $this->load->view('layout/users/auth/forgot_password', $data);
+      }
     }
   }
 

@@ -48,9 +48,12 @@
             </ul>
           <?php }else{ ?>
               <div  class="navbar-form navbar-right" style = 'margin-top:13px;'>
-                <a href="<?php print base_url() ?>login?source=header&penandaku_token=<?php echo $this->security->get_csrf_hash(); ?>&utf8=✓" class="btn btn-default" style="padding: 9px 15px;font-family:Roboto;font-weight:normal"><i class="fa fa-sign-in"></i> Sign in</a>
-                <?php if(!$this->uri->segment(1)=="join"){ ?>
-				<a href="<?php print base_url() ?>join?source=header&penandaku_token=<?php echo $this->security->get_csrf_hash(); ?>&utf8=✓" class="btn btn-success" style="padding: 9px 15px;font-family:Roboto;font-weight:normal"><i class="fa fa-user-plus"></i> Sign up</a><?php } ?>
+                <?php if($this->uri->segment(1) == "join") { ?>
+                <a href="<?php print base_url() ?>login?source=header&generate_token=<?php echo $this->security->get_csrf_hash(); ?>&utf8=✓" class="btn btn-default" style="padding: 9px 15px;font-family:Roboto;font-weight:normal"><i class="fa fa-sign-in"></i> Sign in</a>
+                <?php }else { ?>
+                  <a href="<?php print base_url() ?>login?source=header&generate_token=<?php echo $this->security->get_csrf_hash(); ?>&utf8=✓" class="btn btn-default" style="padding: 9px 15px;font-family:Roboto;font-weight:normal"><i class="fa fa-sign-in"></i> Sign in</a>
+  				        <a href="<?php print base_url() ?>join?source=header&generate_token=<?php echo $this->security->get_csrf_hash(); ?>&utf8=✓" class="btn btn-success" style="padding: 9px 15px;font-family:Roboto;font-weight:normal"><i class="fa fa-user-plus"></i> Sign up</a>
+                <?php } ?>
               </div>
          <?php } ?>
         </div>

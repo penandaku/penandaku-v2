@@ -1,10 +1,14 @@
 <div class="container">
   <div class="row">
-    <div class="text-center" style="text-align: center;color: #555;font-size: 30px;font-weight: 300;margin-top: 50px;margin-bottom: 50px;">
+    <div class="text-center" style="text-align: center;color: #555;font-size: 30px;font-weight: 300;margin-top: 50px;margin-bottom: 50px;font-family:Roboto">
       Create your account
     </div>
     <div class="col-md-12">
       <div class="col-md-8">
+        <div class="text-sign" style="font-family:Roboto;font-weight:300;font-size:20px;text-align:center;margin-bottom:45px">
+          Get free account unlimited
+        </div>
+        <img src="<?php print cdn('img/laptop-penandaku.png')?>" style="width:100%;">
       </div>
       <div class="col-md-4">
         <div class="card-login" style="font-family:'Roboto'">

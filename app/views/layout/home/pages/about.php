@@ -25,6 +25,9 @@
           </div>
        </div>
      <div class="penandaku-batas"></div>
+     <div class="follow-twitter" style="text-align:center">
+       <a href="<?php //echo $this->facebook->login_url(); ?>" class="btn-green-blue btn btn-lg" style="background: #4078c0;color:#fff;"><i class="fa fa-twitter"></i> Follow us on Twitter</a>
+     </div>
     </div>
   </div>
   <div class="col-md-12" style="margin-top:50px;margin-bottom:100px">
@@ -39,7 +42,7 @@
           <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);font-size:18px;font-weight:300">
             Fika Ridaul Maulayya
             <div class="team-social" style="margin-top:10px;text-align:center">
-              <a href="<?php //echo $this->facebook->login_url(); ?>" class="btn-green-primary btn" style="background: #3b5999;color:#fff;"><i class="fa fa-linkedin"></i></a>
+              <a href="<?php //echo $this->facebook->login_url(); ?>" class="btn-green-primary btn btn-sm" style="background: #3b5999;color:#fff;"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
       </div>
@@ -52,7 +55,7 @@
           <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);font-size:18px;font-weight:300">
             Achmad Zainul Falakh
             <div class="team-social" style="margin-top:10px;text-align:center">
-              <a href="<?php //echo $this->facebook->login_url(); ?>" class="btn-green-primary btn" style="background: #3b5999;color:#fff;"><i class="fa fa-linkedin"></i></a>
+              <a href="<?php //echo $this->facebook->login_url(); ?>" class="btn-green-primary btn btn-sm" style="background: #3b5999;color:#fff;"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
       </div>
@@ -65,7 +68,7 @@
           <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);font-size:18px;font-weight:300">
             Faisal Mahadi
             <div class="team-social" style="margin-top:10px;text-align:center">
-              <a href="<?php //echo $this->facebook->login_url(); ?>" class="btn-green-primary btn" style="background: #3b5999;color:#fff;"><i class="fa fa-linkedin"></i></a>
+              <a href="<?php //echo $this->facebook->login_url(); ?>" class="btn-green-primary btn btn-sm" style="background: #3b5999;color:#fff;"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
       </div>
@@ -78,7 +81,7 @@
           <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);font-size:18px;font-weight:300">
             M Yaziddiniam
             <div class="team-social" style="margin-top:10px;text-align:center">
-              <a href="<?php //echo $this->facebook->login_url(); ?>" class="btn-green-primary btn" style="background: #3b5999;color:#fff;"><i class="fa fa-linkedin"></i></a>
+              <a href="<?php //echo $this->facebook->login_url(); ?>" class="btn-green-primary btn btn-sm" style="background: #3b5999;color:#fff;"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
       </div>

@@ -44,7 +44,7 @@
         <p>Penandaku adalah App penyedia layanan penyimpanan bookmark secara online, sehingga anda tidak perlu kawatir menyimpan dan mengakses bookmark anda dimanapun dan kapanpun saja.</p>
     </div>
     <div class="col-md-3">
-      <img class="img-responsive" src="<?php print cdn('img/home.svg') ?>" style="width:200px;margin-left:50px">
+      <img class="img-responsive" src="<?php print cdn('img/penandaku-laptop.png') ?>" style="width:100%;margin-left:50px">
     </div>
   </div>
 

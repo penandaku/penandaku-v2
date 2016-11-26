@@ -1,5 +1,5 @@
 <div class="penandaku-profile">
-    <img align="left" class="penandaku-image-lg" src="<?php print cdn('img/bg.jpg') ?>" alt="Profile image example"/>
+    <img align="left" class="penandaku-image-lg" src="<?php print cdn('img/sampul.png') ?>" alt="Profile image example"/>
     <img align="left" class="penandaku-image-profile thumbnail" src="<?php echo cloud('avatar/wew.jpg') ?>" alt="Profile image example"/>
       <div class="penandaku-profile-text">
             <h1 style="font-family:Roboto;font-weight:300">Fika Ridaul Maulayya</h1>
@@ -60,7 +60,6 @@
                   <a href="#" target="new_blank">Detail Bookmark <i class="fa fa-arrow-right"></i></a>
               </div>
           </div>
-
 
     </div>
   </div>

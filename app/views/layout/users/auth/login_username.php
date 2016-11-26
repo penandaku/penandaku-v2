@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="<?php print cdn('css/font-awesome/css/font-awesome.css') ?>">
     <link rel="stylesheet" href="<?php print cdn('css/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?php print cdn('css/jumbotron.css') ?>">
+    <link rel="stylesheet" href="<?php print cdn('css/toastr.css') ?>">
   </head>
   <body style="background-color:#fff">
     <div class="container" style="margin-top:30px">
@@ -26,11 +27,11 @@
               <div class="thumb-login">
                 <canvas id="canvas" class="circle" width="96" height="96"></canvas>
               </div>
+              <div class="form-login-username">
               <?php
                 $attributes = array('id' => 'frm_login');
                 echo form_open('login?source=header&utf8=✓', $attributes)
                 ?>
-
                 <div class="form-group">
                   <input type="text" name="username" class="form-control"  style="height:44px;font-size:16px" value="<?php echo set_value('username') ?>" placeholder="Enter username">
                   <?php echo form_error('username'); ?>
@@ -41,8 +42,8 @@
                 <button type="submit" id="load" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Checking..." class="penandaku-btn-login btn btn-sm btn-success">Next</button>
               <?php echo form_close(); ?>
             </div>
+            </div>
         </div>
-
         <div class="text-center">
           <a href="<?php //echo $this->facebook->login_url(); ?>" class="btn-green-primary btn" style="background: #3b5999;color:#fff;"><i class="fa fa-facebook"></i> Facebook</a>
           <a href="<?php //echo $this->google->login_url(); ?>" class="btn-green-primary btn" style="background: #dc4e41;color:#fff"><i class="fa fa-google-plus"></i> Google +</a>
@@ -53,15 +54,16 @@
     </div>
     <script src="<?php print cdn('js/jquery.min.js') ?>"></script>
     <script src="<?php print cdn('js/bootstrap.min.js') ?>"></script>
-    <script src="<?php print cdn('js/custom.js') ?>"></script>
+    <script src="<?php print cdn('js/toastr.js') ?>"></script>
+    <script src="<?php print cdn('js/ajax_login.js') ?>"></script>
     <script>
       $('.penandaku-btn-login').on('click', function() {
           var $this = $(this);
               $this.button('loading');
               setTimeout(function() {
                 $this.button('reset');
-              }, 2000);
-      });
+              }, 1000);
+      });      
     </script>
   </body>
 </html>

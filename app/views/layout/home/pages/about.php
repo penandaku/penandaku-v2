@@ -36,11 +36,13 @@
     </div>
     <div class="col-md-3">
       <div class="card">
-          <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);padding:8px">
-            <img src="<?php echo cloud('avatar/wew.jpg') ?>" class="img-responsive" style="border-radius:2px">
+          <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);padding:0px">
+            <img src="<?php echo cloud('avatar/wew.jpg') ?>" class="img-responsive">
           </div>
-          <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);font-size:18px;font-weight:300">
+          <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);font-size:20px;font-weight:300;text-align:center">
             Fika Ridaul Maulayya
+            <br>
+            <span style="font-family:Roboto;font-size:15px;text-align-center">Software Engineer</span>
             <div class="team-social" style="margin-top:10px;text-align:center">
               <a href="<?php //echo $this->facebook->login_url(); ?>" class="btn-green-primary btn btn-sm" style="background: #3b5999;color:#fff;"><i class="fa fa-linkedin"></i></a>
             </div>
@@ -49,11 +51,13 @@
     </div>
     <div class="col-md-3">
       <div class="card">
-          <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);padding:8px">
-            <img src="<?php echo cloud('avatar/fika.jpg') ?>" class="img-responsive" style="border-radius:2px">
+          <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);padding:0px">
+            <img src="<?php echo cloud('avatar/fika.jpg') ?>" class="img-responsive">
           </div>
-          <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);font-size:18px;font-weight:300">
+          <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);font-size:20px;font-weight:300;text-align:center">
             Achmad Zainul Falakh
+            <br>
+            <span style="font-family:Roboto;font-size:15px;text-align-center">Mobile Developer</span>
             <div class="team-social" style="margin-top:10px;text-align:center">
               <a href="<?php //echo $this->facebook->login_url(); ?>" class="btn-green-primary btn btn-sm" style="background: #3b5999;color:#fff;"><i class="fa fa-linkedin"></i></a>
             </div>
@@ -62,11 +66,13 @@
     </div>
     <div class="col-md-3">
       <div class="card">
-          <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);padding:8px">
-            <img src="<?php echo cloud('avatar/fika2.jpg') ?>" class="img-responsive" style="border-radius:2px">
+          <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);padding:0px">
+            <img src="<?php echo cloud('avatar/fika2.jpg') ?>" class="img-responsive">
           </div>
-          <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);font-size:18px;font-weight:300">
+          <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);font-size:20px;font-weight:300;text-align:center">
             Faisal Mahadi
+            <br>
+            <span style="font-family:Roboto;font-size:15px;text-align-center">Sys Administrator</span>
             <div class="team-social" style="margin-top:10px;text-align:center">
               <a href="<?php //echo $this->facebook->login_url(); ?>" class="btn-green-primary btn btn-sm" style="background: #3b5999;color:#fff;"><i class="fa fa-linkedin"></i></a>
             </div>
@@ -75,11 +81,13 @@
     </div>
     <div class="col-md-3">
       <div class="card">
-          <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);padding:8px">
-            <img src="<?php echo cloud('avatar/wew.jpg') ?>" class="img-responsive" style="border-radius:2px">
+          <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);padding:0px">
+            <img src="<?php echo cloud('avatar/wew.jpg') ?>" class="img-responsive">
           </div>
-          <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);font-size:18px;font-weight:300">
+          <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);font-size:20px;font-weight:300;text-align:center">
             M Yaziddiniam
+            <br>
+            <span style="font-family:Roboto;font-size:15px;text-align-center">Backend Developer</span>
             <div class="team-social" style="margin-top:10px;text-align:center">
               <a href="<?php //echo $this->facebook->login_url(); ?>" class="btn-green-primary btn btn-sm" style="background: #3b5999;color:#fff;"><i class="fa fa-linkedin"></i></a>
             </div>

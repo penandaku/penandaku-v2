@@ -133,6 +133,8 @@ class Login extends CI_Controller {
             redirect('/');
           }
         }else{
+          //create session flashdata
+          $this->session->set_flashdata('pesan_notif', 'PesanNotif(\'error\',\'Password Anda salah.\',\'\');');          
           //create data array
           $data = array(
                     'error' => '<div class="alert alert-danger" style="font-family:Roboto">

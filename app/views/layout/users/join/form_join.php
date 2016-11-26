@@ -5,10 +5,13 @@
     </div>
     <div class="col-md-12">
       <div class="col-md-8">
-        <div class="text-sign" style="font-family:Roboto;font-weight:300;font-size:20px;text-align:center;margin-bottom:45px">
+        <div class="text-sign" style="font-family:Roboto;font-weight:300;font-size:20px;text-align:center;margin-bottom:20px">
           Get free account unlimited
+          <div class="description-text-sign-up">
+            Awesome apps for save and access bookmark online.
+          </div>
         </div>
-        <img src="<?php print cdn('img/laptop-penandaku.png')?>" style="width:100%;">
+        <img src="<?php print cdn('img/penandaku-laptop copy.png')?>" style="width:100%;">
       </div>
       <div class="col-md-4">
         <div class="card-login" style="font-family:'Roboto'">

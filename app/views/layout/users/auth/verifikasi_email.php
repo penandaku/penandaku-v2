@@ -40,7 +40,7 @@
               $this.button('loading');
               setTimeout(function() {
                 $this.button('reset');
-              }, 2000);
+              }, 1000);
       });
     </script>
   </body>

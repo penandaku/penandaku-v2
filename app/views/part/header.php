@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="<?php print cdn('css/font-awesome/css/font-awesome.css') ?>">
     <link rel="stylesheet" href="<?php print cdn('css/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?php print cdn('css/jumbotron.css') ?>">
+    <link rel="stylesheet" href="<?php print cdn('css/toastr.css') ?>">
   </head>
   <body>
+    <div id="app">
     <nav class="penandaku-navbar navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -23,7 +25,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="penandaku-logo-navbar" href="<?php print base_url() ?>">
+          <a class="penandaku-logo-navbar" v-bind:href.literal="<?php print base_url() ?>">
                <img class="penandaku-logo" src="<?php print cdn('img/wew.svg') ?>" alt="Penandaku.com - Simple Apps for Save and Access <br> Bookmark online" />
           </a>
         </div>
@@ -49,10 +51,10 @@
           <?php }else{ ?>
               <div  class="navbar-form navbar-right" style = 'margin-top:13px;'>
                 <?php if($this->uri->segment(1) == "join") { ?>
-                <a href="<?php print base_url() ?>login?source=header&generate_token=<?php echo $this->security->get_csrf_hash(); ?>&utf8=✓" class="btn btn-default" style="padding: 9px 15px;font-family:Roboto;font-weight:normal"><i class="fa fa-sign-in"></i> Sign in</a>
+                <a href="<?php print base_url() ?>login?source=header&resource=sign_up&utf8=✓" class="btn btn-default" style="padding: 9px 15px;font-family:Roboto;font-weight:normal"><i class="fa fa-sign-in"></i> {{label_signin}}</a>
                 <?php }else { ?>
-                  <a href="<?php print base_url() ?>login?source=header&generate_token=<?php echo $this->security->get_csrf_hash(); ?>&utf8=✓" class="btn btn-default" style="padding: 9px 15px;font-family:Roboto;font-weight:normal"><i class="fa fa-sign-in"></i> Sign in</a>
-  				        <a href="<?php print base_url() ?>join?source=header&generate_token=<?php echo $this->security->get_csrf_hash(); ?>&utf8=✓" class="btn btn-success" style="padding: 9px 15px;font-family:Roboto;font-weight:normal"><i class="fa fa-user-plus"></i> Sign up</a>
+                  <a v-bind:href='url_signin' class="btn btn-default" style="padding: 9px 15px;font-family:Roboto;font-weight:normal"><i class="fa fa-sign-in"></i> {{label_signin}}</a>
+  				        <a v-bind:href='url_signup' class="btn btn-success" style="padding: 9px 15px;font-family:Roboto;font-weight:normal;text-shadow: 0 -1px 0 rgba(0,0,0,0.15);background-color: #6cc644;background-image: -webkit-linear-gradient(#7bcc58, #60b838);background-image: linear-gradient(#7bcc58, #60b838);border-color: #55a532;"><i class="fa fa-user-plus"></i> {{label_signup}}</a>
                 <?php } ?>
               </div>
          <?php } ?>

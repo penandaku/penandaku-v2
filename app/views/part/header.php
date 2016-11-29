@@ -26,7 +26,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="penandaku-logo-navbar" v-bind:href.literal="<?php print base_url() ?>">
-               <img class="penandaku-logo" src="<?php print cdn('img/wew.svg') ?>" alt="Penandaku.com - Simple Apps for Save and Access <br> Bookmark online" />
+               <img class="penandaku-logo" src="<?php print cdn('img/logo-login.png') ?>" alt="Penandaku.com - Simple Apps for Save and Access <br> Bookmark online" />
           </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
@@ -40,7 +40,7 @@
                   <div style="color:#333;margin-left:17px;font-weight: 500;"><?php print $this->session->userdata('username'); ?></div>
                   <li class="divider"></li>
                   <li><a href="<?php print base_url() ?>user/dashboard/"><i class="fa fa-home"></i> Dashboard</a></li>
-                  <li><a href="<?php print base_url() ?>user/label/"><i class="fa fa-folder-open"></i> Your label</a></li>
+                  <li><a href="<?php print base_url() ?>user/label/"><i class="fa fa-folder"></i> Your label</a></li>
                   <li><a href="<?php print base_url() ?>user/bookmark/"><i class="fa fa-bookmark"></i> Your bookmark</a></li>
                   <li class="divider"></li>
                   <li><a href="<?php print base_url() ?>user/setting/"><i class="fa fa-cogs"></i> Setting</a></li>

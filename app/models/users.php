@@ -66,6 +66,38 @@ class Users extends CI_Model{
 	}
 	/* end fungsi auth */
 
+  function get_url($url)
+  {
+    $query = $this->db->query("SELECT * FROM tbl_bookmark as a JOIN tbl_users as b ON a.user_id = b.id_user JOIN tbl_label as c ON c.id_label = b.id_user WHERE a.slug_bookmark = '$url'");
+
+    if($query->num_rows() > 0)
+    {
+      return $query->row();
+    }else
+    {
+      return NULL;
+    }
+  }
+
+  /* fungsi get url
+  function get_url($url)
+  {
+    $this->db->select('*');
+    $this->db->from('tbl_bookmark');
+    $this->db->from('tbl_users');
+    //$this->db->from('tbl_label');
+    $this->db->join('tbl_users', 'id_user = user_id');
+    $this->db->join('tbl_label', 'label_id = id_user');
+    $this->db->where('slug_bookmark', $url);
+    $query = $this->db->get();
+    if ($query->num_rows() == 0) {
+			return FALSE;
+		} else {
+			return $query->row();
+		}
+  }
+  /* end fungsi get url */
+
   /* fungsi restrict halaman */
   function users_id()
   {

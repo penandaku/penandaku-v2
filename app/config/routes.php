@@ -54,6 +54,9 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 //ROUTING
+//routing bookmark
+$route['bookmark/(:any)'] = "bookmark/detail/$1";
+
 $route['about'] = "pages/about";
 $route['policies'] = "pages/policies";
 $route['terms'] = "pages/terms";

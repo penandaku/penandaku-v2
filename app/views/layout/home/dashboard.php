@@ -12,13 +12,13 @@
     <div class="col-md-3">
       <div class="card">
           <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);">
-             <div class="user-company" style="margin-bottom:5px"><i class="fa fa-building-o"></i> Pondok Kode Inc.</div>
-             <div class="user-address" style="margin-bottom:5px"><i class="fa fa-map-marker"></i> Demak Jawa Tengah Indonesia</div>
-             <div class="user-website" style="margin-bottom:5px"><i class="fa fa-globe"></i> http://www.pondokkode.com</div>
-             <div class="user-join" style="margin-bottom:5px"><i class="fa fa-clock-o"></i> Joined on Feb 25, 2015</div>
+             <div class="user-company" style="margin-bottom:5px"><i class="fa fa-building-o"></i> <?php if($this->session->userdata('company') == "") { echo '<span style="color:#e8110c">Company Not Found</span>'; } else { echo $this->session->userdata('company'); } ?></div>
+             <div class="user-address" style="margin-bottom:5px"><i class="fa fa-map-marker"></i> <?php if($this->session->userdata('address') == "") { echo '<span style="color:#e8110c">Address Not Found</span>'; } else { echo $this->session->userdata('address'); } ?></div>
+             <div class="user-website" style="margin-bottom:5px"><i class="fa fa-globe"></i> <?php if($this->session->userdata('website') == "") { echo '<span style="color:#e8110c">Website Not Found</span>'; } else { echo $this->session->userdata('website'); } ?></div>
+             <div class="user-join" style="margin-bottom:5px"><i class="fa fa-clock-o"></i> Joined on <?php if($this->session->userdata('joined') == "") { echo '<span style="color:#e8110c">Joined Not Found</span>'; } else { echo $this->session->userdata('joined'); } ?></div>
           </div>
           <div class="card-content" style="border-bottom: 1px solid rgba(160, 160, 160, 0.2);">
-            Full Stack Web Developer From Indonesia and System Administrator at Universitas KH. A. Wahab Hasbullah.
+            <?php if($this->session->userdata('about') == "") { echo '<span style="color:#e8110c">About Not Found</span>'; } else { echo $this->session->userdata('about'); } ?>
           </div>
       </div>
     </div>

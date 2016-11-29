@@ -4,7 +4,7 @@
     <h2 style="font-family: 'Roboto'; font-weight:300;font-size:40px;margin-top:100px;margin-bottom:25px"><strong>PENANDA</strong> KU<br> Layanan Penyimpanan Bookmark Online</h2>
     <p style="font-family: 'Roboto'; font-weight:100;font-size:25px">Aplikasi sederhana untuk menyimpan dan akses Bookmark secara online dimanapun dan kapanpun.</p>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4" style="margin-top:30px">
       <div class="sign-up-home">
       <?php
         $attributes = array('id' => 'frm_login');

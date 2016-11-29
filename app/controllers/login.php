@@ -124,17 +124,23 @@ class Login extends CI_Controller {
           foreach($checking as $users)
           {
             $this->session->set_userdata(array(
+                //set session data
                 'users_id'  => $users->id_user,
                 'username'  => $users->username,
                 'password'  => $users->password,
                 'nama_user' => $users->nama_user,
-                'foto_user' => $users->foto_user
+                'foto_user' => $users->foto_user,
+                'company'   => $users->company,
+                'address'   => $users->address,
+                'website'   => $users->website,
+                'about'     => $users->about,
+                'joined'    => $users->joined
             ));
             redirect('/');
           }
         }else{
           //create session flashdata
-          $this->session->set_flashdata('pesan_notif', 'PesanNotif(\'error\',\'Password Anda salah.\',\'\');');          
+          $this->session->set_flashdata('pesan_notif', 'PesanNotif(\'error\',\'Password Anda salah.\',\'\');');
           //create data array
           $data = array(
                     'error' => '<div class="alert alert-danger" style="font-family:Roboto">
